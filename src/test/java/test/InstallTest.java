@@ -1,7 +1,6 @@
 package test;
 
 import base.BaseTest;
-import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -88,7 +87,7 @@ public class InstallTest extends BaseTest {
             wait.until(ExpectedConditions.elementToBeClickable(By.name(SHIFT_BROWSER_QUICK_SETTINGS))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.name(SHIFT_BROWSER_ADVANCED_SETTINGS))).click();
 
-            WebElement browserVersionElement = windowsDriver.findElement(AppiumBy.xpath(SHIFT_BROWSER_VERSION));
+            WebElement browserVersionElement = windowsDriver.findElement(By.xpath(SHIFT_BROWSER_VERSION));
             wait.until(ExpectedConditions.visibilityOf(browserVersionElement));
 
             return browserVersionElement.getText();
