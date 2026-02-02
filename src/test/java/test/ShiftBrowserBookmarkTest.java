@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class BookmarkTest extends BaseTest {
+public class ShiftBrowserBookmarkTest extends BaseTest {
 
     private final String SHIFT_BROWSER_SEARCH_BAR = "//Edit[@AutomationId='omnibox-textbox']";
     private final String SHIFT_BROWSER_BOOKMARK_BUTTON = "//Button[@Name='Add Bookmark']";
